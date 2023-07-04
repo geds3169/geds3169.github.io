@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="./css/my_css.css">
+    <script src="./script/function_pdf.js"></script>
+    <title>Guilhem SCHLOSSER</title>
+</head>
+<body>
+    <!-- Nom -->
+    <h1 style="text-align:center">Guilhem SCHLOSSER<span class="print-button" onclick="window.print()">&#128438;</span></h1>
+        <h2 style="text-align:center">Administrateur Systèmes et réseaux, DevOps - Profil Junior</h2>
+
+    <!-- Menu -->
+    <div class="topnav">
+        <a href="./index.html">Présentation</a>
+        <a href="Skills.html">Skills</a>
+        <a href="./experiences.html">Expériences</a>
+        <a href="./Formations.html">Formations</a>
+        <a class="active" href="./Certifications.html">Certifications</a>
+        <a href="./Projets personnel.html">Projets personnel</a>
+        <a href="./contact.html">Contact</a>
+        <div class="avatar">
+            <img src="https://geds3169.github.io/images/avatar.png" alt="Mon Identité">
+        </div>
+    </div>
+    
+    <!-- Certifications -->
+    <p><i><b>Cliquez sur une image pour en afficher le contenu</b></i></p>
+    <table>
+        <h3>DevOps</h3>
+        <tr>
+            <th>Attestation de fin de formation,filiereDevOps</th>
+            <th>Notes</th>
+        </tr>
+        <tr>
+            <td>
+                <img id="image1" src="./image/preview/Attestation_fin_de_formation_Filiere_DevOps_1.svg" alt="Attestation de fin de formation,filiereDevOps" width="100" height="auto" onclick="afficherPDF('./PDF/Attestation_fin_de_formation_Filiere_DevOps.pdf')">
+            </td>
+            <td>
+                <img id="image2" src="./image/preview/Notes_Filiere_DevOps.svg" alt="Notes" width="100" height="auto" onclick="afficherPDF('./PDF/Notes_Filiere_DevOps.pdf')">
+            </td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <h3>Niveau Master 1</h3>
+        <p><i>Formation abrogée, suite à une erreur de la part du centre de formation ORT Il s'agissait d'un titre RNCP de Niveau 6 soumis au fait d'effectuer la deuxième année.
+            (Signé Master 1 & 2, diplôme remis par le centre de formation parrain 3IL: titre RNCP de Niveau 6).
+        Formation abandonnée suite au désistement de l'Entreprise SCASSI pour l'alternance (projet cloturé en trois mois) et due au retard d'entrée en formation (cause recherche d'alternance et modification des modalités d'entrée en formation).</i></p>
+        <tr>
+            <th>Certificat de compétence</th>
+            <th>Notes</th>
+            <!-- Pour ajouter une entrée 
+            <th></th>
+            -->
+
+        </tr>
+        <tr>
+            <td>
+                <img id="image1" src="./image/preview/Certificat_de_competence_Master_1_ERIS.svg" alt="Certificat de compétence Master 1 ERIS" width="100" height="auto" onclick="afficherPDF('./PDF/Certificat_de_competence_Master_1_ERIS.pdf')">
+            </td>
+            <td>
+                <img id="image1" src="./image/preview/Note_Master_1_ERIS.svg" alt="Note Master 1 ERIS" width="100" height="auto" onclick="afficherPDF('./PDF/Note_Master_1_ERIS.pdf')">
+            </td>
+            <!-- Pour ajouter une entrée
+            <td>
+                <img id="" src="" alt="" width="100" height="auto" onclick="afficherPDF('')">
+            </td>
+            -->
+        </tr>
+    </table>
+    <table>
+        <h3>Titre RNCP Niveau 5 - Bac +2</h3>
+        <tr>
+            <th>Diplôme</th>
+        </tr>
+        <tr>
+            <td>
+                <img id="image2" src="./image/preview/Titre-RNCP_Niv5-BAC-2-TSSR.svg" alt="Titre-RNCP_Niv5-BAC-2-TSSR" width="100" height="auto" onclick="afficherPDF('./PDF/Titre RNCP_Niv5 -BAC+2-TSSR.pdf')">
+            </td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <h3>Cisco</h3>
+        <tr>
+            <th>Certificat BAC5-CCNA1</th>
+            <th>Certificat CYBER-ESSENTIALS	Cybersecurity Essentials</th>
+        </tr>
+        <tr>
+            <td>
+                <img id="image2" src="./image/preview/guilhemschlosser-BAC5-CCNA1-certificate.svg" alt="BAC5-CCNA1	CCNA R&S: Introduction to Networks" width="100" height="auto" onclick="afficherPDF('./PDF/Cybersecurity Essentials.pdf')">
+            </td>
+            <td>
+                <img id="image2" src="./image/preview/Cybersecurity-Essentials_1.svg" alt="ERIS-2020-2-CYBER-ESSENTIALS	Cybersecurity Essentials" width="100" height="auto" onclick="afficherPDF('./PDF/Cybersecurity Essentials.pdf')">
+            </td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <h3>Langues</h3>
+        <tr>
+            <th>Attestation de niveau</th>
+            <!-- Pour ajouter une entrée 
+            <th></th>
+            -->
+
+        </tr>
+        <tr>
+            <td>
+                <img id="image1" src="./image/preview/Linguaskill-1.svg" alt="Linguaskill" width="100" height="auto" onclick="afficherPDF('./PDF/Linguaskill.pdf')">
+            </td>
+            <!-- Pour ajouter une entrée
+            <td>
+                <img id="" src="" alt="" width="100" height="auto" onclick="afficherPDF('')">
+            </td>
+            -->
+        </tr>
+    </table>
+    <div class="pdf-container" id="pdfContainer">
+        <embed src="" type="application/pdf" title="View Certifications" width="100%" height="720" />
+        <button onclick="fermerPDF()">Fermer le PDF</button>
+    </div>
+</object>
+</body>
+</html>
